@@ -51,8 +51,9 @@ The full writeup is in [FINDINGS.md](FINDINGS.md). The highlights:
 
 - The scanner's scores are almost always either 0.0 or 1.0, so tuning the
   threshold barely does anything. The default 0.5 is fine.
-- It false-flags normal commands that happen to start like injections, like
-  "Override the default timeout" or "Ignore the warning about the cache."
+- It false-flags normal commands that happen to be phrased like the start of an
+  injection, like "Override the default timeout" or "Ignore the warning about
+  the cache."
 - It flags harmless meta-questions about the agent's own rules, which matters if
   the agent is supposed to answer those.
 - A simple l33t-speak attack ("1gn0r3 4ll pr3v10us...") slips through at every
