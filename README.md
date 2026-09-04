@@ -15,7 +15,7 @@ model sees it. Each scanner checks for one thing: prompt injection, toxicity,
 secrets and credentials, banned phrases, token length, and so on. The one I
 focused on is the prompt injection scanner, which uses a HuggingFace model
 (ProtectAI's deberta-v3-base-prompt-injection-v2) to score how likely a prompt is
-an injection attempt. There's no database behind it, the models get downloaded
+an injection attempt. There's no database behind it; the models get downloaded
 once and then run locally.
 
 ## How the tests are organized
