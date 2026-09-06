@@ -34,7 +34,7 @@ None of them import each other, so you can run them in any order.
 
 ## Running it
 
-```
+```bash
 pip install -r requirements.txt
 python scripts/01_basic_demo.py
 ```
