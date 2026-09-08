@@ -42,8 +42,9 @@ python scripts/01_basic_demo.py
 The first run downloads the models from HuggingFace (a few hundred MB). After
 that it runs offline.
 
-Saved output from the two most interesting runs is in the `results/` folder, so
-you can see the numbers without running anything.
+Saved output from the two most interesting runs (`05_threshold_sweep.py` and
+`06_multi_scanner_toggle.py`) is in the `results/` folder, so you can see the
+numbers without running anything.
 
 ## What I found
 
