@@ -23,12 +23,12 @@ once and then run locally.
 I wrote six scripts that build on each other, going from "does it even work" to
 "where does it break" to "how do you cover the gaps":
 
-- `01_basic_demo.py` - sanity check on obvious injections versus obvious benign prompts
-- `02_subtle_injections.py` - disguised attacks, plus benign prompts that contain trigger words
-- `03_false_positive_test.py` - all benign prompts, counts how many get wrongly flagged
-- `04_false_negative_test.py` - all disguised attacks, counts how many slip through
-- `05_threshold_sweep.py` - sweeps the decision threshold from 0.3 to 0.99 to see if tuning helps
-- `06_multi_scanner_toggle.py` - layers multiple scanners to see if they cover each other's gaps
+- `scripts/01_basic_demo.py` - sanity check on obvious injections versus obvious benign prompts
+- `scripts/02_subtle_injections.py` - disguised attacks, plus benign prompts that contain trigger words
+- `scripts/03_false_positive_test.py` - all benign prompts, counts how many get wrongly flagged
+- `scripts/04_false_negative_test.py` - all disguised attacks, counts how many slip through
+- `scripts/05_threshold_sweep.py` - sweeps the decision threshold from 0.3 to 0.99 to see if tuning helps
+- `scripts/06_multi_scanner_toggle.py` - layers multiple scanners to see if they cover each other's gaps
 
 None of them import each other, so you can run them in any order.
 
