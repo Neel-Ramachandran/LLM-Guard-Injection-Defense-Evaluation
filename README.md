@@ -73,7 +73,7 @@ not absolute.
 
 - Python
 - llm-guard (v0.3.16)
-- The scanner models it pulls from HuggingFace
+- HuggingFace transformers (for the scanner models, e.g. ProtectAI's deberta-v3-base-prompt-injection-v2)
 
 ## Author
 
