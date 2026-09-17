@@ -10,7 +10,10 @@ GPU.
 The biggest thing I noticed is that the model almost never gives a middling
 score. Across every test, prompts landed either right at 1.0 or right at 0.0,
 with very little in between. You can see it in the threshold sweep (script 05),
-where I moved the cutoff from 0.3 all the way to 0.99.
+where I moved the cutoff from 0.3 all the way to 0.99. The script also runs the
+whole sweep twice, once scanning the prompt as a whole (`match_type=FULL`) and
+once sentence-by-sentence (`match_type=SENTENCE`); both modes produced
+identical results on this test set.
 
 Because the scores are split like that, changing the threshold does almost
 nothing. The false positive count stayed at 7 across the whole range and only
