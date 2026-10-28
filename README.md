@@ -39,6 +39,8 @@ pip install -r requirements.txt
 python scripts/01_basic_demo.py
 ```
 
+(Swap in any of the six scripts above - they don't depend on each other.)
+
 The first run downloads the models from HuggingFace (a few hundred MB). After
 that it runs offline.
 
